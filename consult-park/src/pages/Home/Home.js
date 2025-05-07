@@ -3,6 +3,7 @@ import heroImage from "../../assets/Hero-Image.jpeg"; // Corrected path
 
 function Home() {
   return (
+    /*Hero Section*/
     <div
       className="hero"
       style={{
@@ -88,6 +89,8 @@ function Home() {
         />
       </div>
     </div>
+
+    
   );
 }
 
