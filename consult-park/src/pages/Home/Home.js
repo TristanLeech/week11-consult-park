@@ -1,11 +1,19 @@
 import React from "react";
 import heroImage from "../../assets/Hero-Image.jpeg"; // Corrected path
+import Costs from "../../assets/Costs.jpeg";
+import Efficiency from "../../assets/Efficiency.jpeg";
+import Contracts from "../../assets/Contracts.jpeg";
+import Communication from "../../assets/Communication.jpeg";
+import Talent from "../../assets/Talent.jpeg";
+import Professionals from "../../assets/Professionals.jpeg";
+import Workforce from "../../assets/Workforce.jpeg";
+import Approach from "../../assets/Approach.jpeg";
 import Card from "../../components/FeatureCard/FeatureCard";
 
 function Home() {
   return (
     <div>
-      /*Hero Section*/
+      {/* Hero Section */}
       <div
         className="hero"
         style={{
@@ -125,12 +133,12 @@ function Home() {
           }}
         >
           <Card
-            image=""
+            image={Costs}
             title="Reduce Costs"
             description="Cut operational expenses without compromising quality by leveraging our cost-effective remote talent solutions."
           />
           <Card
-            image=""
+            image={Efficiency}
             description="Boost productivity with streamlined workflows and highly skilled professionals tailored to your business needs."
           />
           <Card
@@ -139,7 +147,7 @@ function Home() {
             description="Flexible engagements with no long-term commitments—scale your team up or down as needed."
           />
           <Card
-            image=""
+            image={Contracts}
             title="Fluent Communication"
             description="Seamless collaboration with English-proficient professionals who integrate smoothly into your workflow."
           />
@@ -154,22 +162,22 @@ function Home() {
           }}
         >
           <Card
-            image=""
+            image={Talent}
             title="Certified Talent"
             description="Access pre-vetted, certified experts in their fields to ensure top-tier performance.."
           />
           <Card
-            image=""
+            image={Professionals}
             title="Office-Based Professionals"
             description="Remote talent who work in professional environments, ensuring discipline and high productivity."
           />
           <Card
-            image=""
+            image={Workforce}
             title="Dedicated Workforce"
             description="Exclusive team members committed to your business goals, just like in-house employees."
           />
           <Card
-            image=""
+            image={Approach}
             title="Performance-Driven Approach"
             description="Data-backed results with regular performance tracking to ensure continuous improvement."
           />
