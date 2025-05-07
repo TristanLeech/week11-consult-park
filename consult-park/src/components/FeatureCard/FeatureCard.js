@@ -16,14 +16,14 @@ const styles = {
     border: "1px solid #ddd",
     borderRadius: "8px",
     padding: "16px",
-    width: "300px",
+    width: "350px",
     textAlign: "center",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     justifyContent: "center"
   },
   image: {
     width: "100%",
-    height: "220px",
+    height: "280px",
     borderRadius: "8px",
   },
 };
