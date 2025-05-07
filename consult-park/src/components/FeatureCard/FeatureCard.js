@@ -28,6 +28,11 @@ const styles = {
     borderRadius: "8px",
     objectFit: "cover",
   },
+    title: {
+        fontSize: "1.5em",
+        margin: "16px 0",
+        color: "#333",
+    },
 };
 
 export default Card;
