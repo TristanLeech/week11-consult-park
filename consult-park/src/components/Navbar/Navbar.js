@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import textLogo from "../../assets/textLogo.jpg"; // Corrected path
+import logoFull from "../../assets/Consult-Park-Logo-Full.png"; // Corrected path
 import "./Navbar.css"; // Corrected path
 
 function Navbar() {
@@ -30,8 +30,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
-          <img src={textLogo} alt="Consult Park Logo" className="logo-image" />
+        <Link to="/" style={{ textDecoration: "none", display: "flex", alignItems: "center"}}>
+          <img src={logoFull} alt="Consult Park Logo" className="logo-image" style={{ width: "200px", height: "90px"}} />
           
         </Link>
       </div>
