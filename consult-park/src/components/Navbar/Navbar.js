@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import textLogo from "../assets/textLogo.jpg";
-import "../App.css";
+import textLogo from "../../assets/textLogo.jpg"; // Corrected path
+import "./Navbar.css"; // Corrected path
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,11 +31,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
-          <img
-            src={textLogo}
-            alt="Consult Park Logo"
-            className="logo-image"
-          />
+          <img src={textLogo} alt="Consult Park Logo" className="logo-image" />
           <span className="logo-text">Consult Park</span>
         </Link>
       </div>

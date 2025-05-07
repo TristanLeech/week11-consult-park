@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import Outsource from './components/Outsource';
-import Contact from './components/Contact';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home'; // Updated path for Home
+import About from './pages/About/About'; // Updated path for About
+import Services from './pages/Services/Services'; // Updated path for Services
+import Outsource from './pages/Outsource/Outsource'; // Updated path for Outsource
+import Contact from './pages/Contact/Contact'; // Updated path for Contact
 
 function App() {
   return (
