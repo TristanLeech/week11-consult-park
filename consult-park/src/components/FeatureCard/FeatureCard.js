@@ -19,12 +19,14 @@ const styles = {
     width: "350px",
     textAlign: "center",
     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-    justifyContent: "center"
+    justifyContent: "center",
+    fontSize: "1.2em",
   },
   image: {
     width: "100%",
-    height: "280px",
+    height: "350px",
     borderRadius: "8px",
+    objectFit: "cover",
   },
 };
 

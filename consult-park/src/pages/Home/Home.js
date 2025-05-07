@@ -139,15 +139,16 @@ function Home() {
           />
           <Card
             image={Efficiency}
+            title="Increase Efficiency"
             description="Boost productivity with streamlined workflows and highly skilled professionals tailored to your business needs."
           />
           <Card
-            image=""
+            image={Contracts}
             title="No Rigid Contracts"
             description="Flexible engagements with no long-term commitments—scale your team up or down as needed."
           />
           <Card
-            image={Contracts}
+            image={Communication}
             title="Fluent Communication"
             description="Seamless collaboration with English-proficient professionals who integrate smoothly into your workflow."
           />
