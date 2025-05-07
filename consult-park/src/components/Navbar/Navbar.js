@@ -32,7 +32,7 @@ function Navbar() {
       <div className="navbar-logo">
         <Link to="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
           <img src={textLogo} alt="Consult Park Logo" className="logo-image" />
-          <span className="logo-text">Consult Park</span>
+          
         </Link>
       </div>
 
