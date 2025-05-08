@@ -12,25 +12,42 @@
     justify-content: center;
     background: #3498db;
     position: "relative";
-    width: "80%";
+    width: "60%";
+    margin: "80px auto";
+    border-radius: 16px;
+    padding: 1em 6em 1em 3em;
+    margin: 3em 8em 3em 8em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.missVis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #2db365;
+    position: "relative";
+    width: "60%";
     margin: "80px auto";
     border-radius: 16px;
     padding: 1em 3em 1em 3em;
-    margin: 4em;
+    margin: 1em 8em 3em 6em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .teamImage img {
     border-radius: 16px;
     overflow: hidden;
+    box-shadow: "0 8px 20px rgba(0, 0, 0, 0.2)";
 }
 
 .teamImage{
-    padding: 1em 3em 1em 3em;
+    padding: 1em 2em 1em 1em;
 }
 
 .who-we-are h1{
-    color: #fff;
     text-align:left;
+    padding: 10px 0 10px 0;
 }
 
 .whoText h2{
@@ -43,4 +60,25 @@
     color: #fff;
     margin: 0 0 1em 0;
     text-align:left;
+}
+
+.visText{
+    padding-right: 1em;
+}
+
+.visText h1{
+    text-align:right;
+    color: #fff;
+    padding: 10px 0 10px 0;
+}
+
+.visText h2{
+    text-align:right;
+}
+
+.visText p{
+    font-size: 1.2rem;
+    margin: 0 0 1em 0;
+    text-align:right;
+    font-style: bold;
 }
