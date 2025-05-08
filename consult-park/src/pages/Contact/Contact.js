@@ -31,17 +31,17 @@ function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
 
     // Real-time validation for email field only (for better UX)
     if (name === "email" && errors.email) {
-      setErrors(prev => ({ ...prev, [name]: validateField(name, value) }));
+      setErrors((prev) => ({ ...prev, [name]: validateField(name, value) }));
     }
   };
 
   const handleBlur = (e) => {
     const { name, value } = e.target;
-    setErrors(prev => ({ ...prev, [name]: validateField(name, value) }));
+    setErrors((prev) => ({ ...prev, [name]: validateField(name, value) }));
   };
 
   const validateForm = () => {
@@ -59,21 +59,20 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!validateForm()) return;
 
     setIsLoading(true);
-    
+
     try {
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+
       setIsSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
       setErrors({});
     } catch (error) {
       console.error("Submission error:", error);
-      // You could set an error state here to show a submission error message
     } finally {
       setIsLoading(false);
     }
@@ -89,25 +88,26 @@ function Contact() {
       icon: "fas fa-envelope",
       title: "Email",
       content: "support@consultpark.com",
-      link: "mailto:support@consultpark.com"
+      link: "mailto:support@consultpark.com",
     },
     {
       icon: "fas fa-phone",
       title: "Phone",
       content: "+1 (123) 456-7890",
-      link: "tel:+11234567890"
+      link: "tel:+11234567890",
     },
     {
       icon: "fas fa-clock",
       title: "Hours",
-      content: "Monday - Friday: 9am - 5pm"
-    }
+      content: "Monday - Friday: 9am - 5pm",
+    },
   ];
 
   const socialLinks = [
     { icon: "fab fa-facebook-f", label: "Facebook", url: "#" },
     { icon: "fab fa-twitter", label: "Twitter", url: "#" },
-    { icon: "fab fa-linkedin-in", label: "LinkedIn", url: "#" }
+    { icon: "fab fa-linkedin-in", label: "LinkedIn", url: "#" },
+    { icon: "fab fa-instagram", label: "Instagram", url: "#" }, // Added Instagram
   ];
 
   return (
@@ -126,7 +126,9 @@ function Contact() {
               <div className="info-item-content">
                 <h3>{info.title}</h3>
                 {info.link ? (
-                  <a href={info.link} className="info-link">{info.content}</a>
+                  <a href={info.link} className="info-link">
+                    {info.content}
+                  </a>
                 ) : (
                   <p>{info.content}</p>
                 )}
@@ -135,8 +137,8 @@ function Contact() {
           ))}
           <div className="social-links">
             {socialLinks.map((social, index) => (
-              <a 
-                href={social.url} 
+              <a
+                href={social.url}
                 aria-label={social.label}
                 key={index}
                 target="_blank"
@@ -154,11 +156,7 @@ function Contact() {
               <i className="fas fa-check-circle"></i>
               <h2>Thank You!</h2>
               <p>We've received your message and will get back to you within 24 hours.</p>
-              <button 
-                onClick={resetForm} 
-                className="submit-button"
-                aria-label="Send another message"
-              >
+              <button onClick={resetForm} className="submit-button">
                 Send Another Message
               </button>
             </div>
@@ -177,15 +175,10 @@ function Contact() {
                     onBlur={handleBlur}
                     className={errors.name ? "error" : formData.name ? "success" : ""}
                     placeholder="Enter your name"
-                    aria-describedby={errors.name ? "name-error" : undefined}
                   />
-                  {errors.name && (
-                    <div id="name-error" className="error-message" role="alert">
-                      {errors.name}
-                    </div>
-                  )}
+                  {errors.name && <div className="error-message">{errors.name}</div>}
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="email">Email Address</label>
                   <input
@@ -197,15 +190,10 @@ function Contact() {
                     onBlur={handleBlur}
                     className={errors.email ? "error" : formData.email ? "success" : ""}
                     placeholder="Enter your email"
-                    aria-describedby={errors.email ? "email-error" : undefined}
                   />
-                  {errors.email && (
-                    <div id="email-error" className="error-message" role="alert">
-                      {errors.email}
-                    </div>
-                  )}
+                  {errors.email && <div className="error-message">{errors.email}</div>}
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="message">Your Message</label>
                   <textarea
@@ -217,32 +205,17 @@ function Contact() {
                     className={errors.message ? "error" : formData.message ? "success" : ""}
                     placeholder="How can we help you?"
                     maxLength="500"
-                    aria-describedby={errors.message ? "message-error counter" : "counter"}
                   ></textarea>
-                  <div id="counter" className="counter">
-                    {charCount}/500 characters
-                  </div>
-                  {errors.message && (
-                    <div id="message-error" className="error-message" role="alert">
-                      {errors.message}
-                    </div>
-                  )}
+                  <div className="counter">{charCount}/500 characters</div>
+                  {errors.message && <div className="error-message">{errors.message}</div>}
                 </div>
-                
+
                 <button
                   type="submit"
                   className={`submit-button ${isLoading ? "loading" : ""}`}
                   disabled={isLoading}
-                  aria-busy={isLoading}
                 >
-                  {isLoading ? (
-                    <>
-                      <span className="spinner" aria-hidden="true"></span>
-                      Sending...
-                    </>
-                  ) : (
-                    "Send Message"
-                  )}
+                  {isLoading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </>

@@ -9,10 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
-  const handleComingSoon = (platform) => {
-    alert(`${platform} link coming soon!`);
-  };
-
   return (
     <footer className="footer">
       <div className="footer-content container">
@@ -53,34 +49,42 @@ function Footer() {
         <div className="footer-section social">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <button
-              onClick={() => handleComingSoon("Facebook")}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-btn"
               aria-label="Facebook"
             >
               <FontAwesomeIcon icon={faFacebookF} />
-            </button>
-            <button
-              onClick={() => handleComingSoon("Twitter")}
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-btn"
               aria-label="Twitter"
             >
               <FontAwesomeIcon icon={faTwitter} />
-            </button>
-            <button
-              onClick={() => handleComingSoon("LinkedIn")}
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-btn"
               aria-label="LinkedIn"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
-            </button>
-            <button
-              onClick={() => handleComingSoon("Instagram")}
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-btn"
               aria-label="Instagram"
             >
               <FontAwesomeIcon icon={faInstagram} />
-            </button>
+            </a>
           </div>
         </div>
       </div>
