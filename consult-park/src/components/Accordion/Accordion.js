@@ -59,6 +59,13 @@ const styles = {
     backgroundColor: "#fff",
     fontFamily: "Arial, sans-serif"
   },
+  image: {
+    maxWidth: "100%",
+    height: "auto",
+    maxHeight: "50vh",
+    marginTop: "10px",
+    borderRadius: "8px",
+  },
 };
 
 export default Accordion;
