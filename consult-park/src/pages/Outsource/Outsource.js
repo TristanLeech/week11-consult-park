@@ -2,8 +2,11 @@ import React from "react";
 import "./Outsource.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset, faDatabase, faTools, faUsers, faCogs } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Outsource() {
+  const navigate = useNavigate();
+
   const bpoServices = [
     {
       icon: faHeadset,
@@ -79,7 +82,9 @@ function Outsource() {
       {/* Call-to-Action Section */}
       <div className="cta-section">
         <h2>Ready to Optimize Your Business?</h2>
-        <button className="cta-button">Contact Us</button>
+        <button className="cta-button" onClick={() => navigate("/contact")}>
+          Contact Us
+        </button>
       </div>
     </div>
   );
