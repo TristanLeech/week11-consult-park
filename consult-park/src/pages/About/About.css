@@ -41,7 +41,7 @@
 .teamImage img {
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: "0 8px 20px rgba(0, 0, 0, 0.2)";
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .teamImage{
@@ -100,16 +100,21 @@
 }
 
 .valText{
-    padding-right: 1em;
+    padding: 0 8em 0 8em ;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
+    background-color: #3485db;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .valText h1{
     text-align:right;
-    padding: 0px 0 10px 0;
+    margin: 0px 0 10px 0;
 }
 
 .valText h2{
@@ -119,7 +124,7 @@
 
 .valText p{
     font-size: 1.2rem;
-    margin: 0 0 3em 0;
+    margin: 0 0 2em 0;
     color: #fff;
     text-align: center;
 }
