@@ -2,6 +2,11 @@ import React from "react";
 import "./About.css";
 import Team from "../../assets/Team.jpeg";
 import Vision from "../../assets/missionVision.jpeg";
+import Excellence from "../../assets/lightbulb.png";
+import Integrity from "../../assets/handshake.png";
+import Innovation from "../../assets/rocket.png";
+import GlobalReach from "../../assets/globe.png";
+import Card from "../../components/FeatureCard/FeatureCard";
 
 function About() {
   return (
@@ -20,7 +25,8 @@ function About() {
         
       </div>
 
-      <div className="missVis">
+      <div className="gradient">
+        <div className="missVis">
         <div className="visText">
           <h2>Mission and Vision</h2>
           <h1>Getting you where you need to be</h1>
@@ -30,7 +36,8 @@ function About() {
         <div  className="teamImage" ><img id="teamImage" src={Vision} width="600px" border-radius="16px"/></div>
       </div>
 
-      <div className="values"></div>
+      <div className="values">
+      <div className="valText">
         <h2>Our Values</h2>
         <h1>Integrity, Innovation, Excellence</h1>
         <p>
@@ -39,6 +46,34 @@ function About() {
           that we always put our clients first and deliver the highest quality
           services.
         </p>
+      </div>
+        
+      
+        <div className="valueGrid">
+            <Card
+              image={Excellence}
+              title="Excellence"
+              description="Cut operational expenses without compromising quality by leveraging our cost-effective remote talent solutions."
+            />
+            <Card
+              image={Integrity}
+              title="Integrity"
+              description="Boost productivity with streamlined workflows and highly skilled professionals tailored to your business needs."
+            />
+            <Card
+              image={Innovation}
+              title="Innovation"
+              description="Flexible engagements with no long-term commitments—scale your team up or down as needed."
+            />
+            <Card
+              image={GlobalReach}
+              title="Global Reach"
+              description="Seamless collaboration with English-proficient professionals who integrate smoothly into your workflow."
+            />
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 }

@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: center;
 }
+.gradient{
+    background: linear-gradient(to bottom, #ffffff00, #3498db);
+}
 
 .who-we-are{
     display: flex;
@@ -80,5 +83,47 @@
     font-size: 1.2rem;
     margin: 0 0 1em 0;
     text-align:right;
-    font-style: bold;
+}
+
+.valueGrid{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    align-items: center;
+}
+
+.valText{
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.valText h1{
+    text-align:right;
+    padding: 0px 0 10px 0;
+}
+
+.valText h2{
+    color: #fff;
+    margin: 1em 0 0 0;
+}
+
+.valText p{
+    font-size: 1.2rem;
+    margin: 0 0 3em 0;
+    color: #fff;
+    text-align: center;
+}
+
+.valueGrid{
+    width: 100%;
 }
