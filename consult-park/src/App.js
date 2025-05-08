@@ -8,6 +8,7 @@ import About from './pages/About/About';
 import Services from './pages/Services/Services';
 import Outsource from './pages/Outsource/Outsource';
 import Contact from './pages/Contact/Contact';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
