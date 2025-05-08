@@ -17,7 +17,7 @@ function Home() {
       <div
         className="hero"
         style={{
-          background: "linear-gradient(135deg,#4ea4dd, #2980b9)",
+          background: "linear-gradient(135deg, #4ea4dd, #2980b9)",
           position: "relative",
           width: "80%",
           margin: "80px auto",
