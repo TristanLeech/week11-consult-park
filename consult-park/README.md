@@ -1,3 +1,51 @@
+
+# Consult Park Site
+
+This site is a react app for a fictional consulting company, and includes basic information and contact pages
+
+
+
+## Authors
+
+The Project Authors are 
+- [Tristan Leech](https://github.com/TristanLeech)
+- [Corbyn Robinson](https://github.com/corbyn-jpg)
+- [Mario Ojo](https://github.com/MarioOjo)
+
+
+## Project Description
+
+The application provides an overview of the fictional Consult Park company, including company values, business hours, and concact details
+
+The site uses a component-forward react framework and is coded mainly in JavaScript, with CSS used for styling, and HTML for basic setup. Namely;
+ - JavaScript - 68% 
+ - CSS - 28.5%
+ - HTML - 3.5%
+
+The [Github Repo](https://github.com/TristanLeech/week11-consult-park) can be found at
+
+ [![Github](https://logoeps.com/wp-content/uploads/2014/04/24233-github-logo-in-a-rounded-square-icon-vector-icon-vector-eps.png)](https://github.com/TristanLeech/week11-consult-park)
+
+For more information or to request Collaborator access please contact a project developer or email tristan.leech@gmail.com
+## Acknowledgements
+
+Fonts and Icons found in the project can be attributed to the free resources available on [FortAwesome](https://fortawesome.com/)
+## Project Description
+
+The application provides an overview of the fictional Consult Park company, including company values, business hours, and concact details
+
+The site uses a component-forward react framework and is coded mainly in JavaScript, with CSS used for styling, and HTML for basic setup. Namely;
+ - JavaScript - 68% 
+ - CSS - 28.5%
+ - HTML - 3.5%
+
+The [Github Repo](https://github.com/TristanLeech/week11-consult-park) can be found at
+
+ [![Github](https://logoeps.com/wp-content/uploads/2014/04/24233-github-logo-in-a-rounded-square-icon-vector-icon-vector-eps.png)](https://github.com/TristanLeech/week11-consult-park)
+
+For more information or to request Collaborator access please contact a project developer or email tristan.leech@gmail.com
+## General Command Information
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
